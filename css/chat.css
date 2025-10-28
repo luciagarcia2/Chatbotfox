@@ -1,0 +1,143 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 400px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  background: #2563eb;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.inbox {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.bot-inbox .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.bot-inbox .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-inbox {
+  justify-content: flex-end;
+}
+
+.user-inbox .msg-header {
+  background: #60a5fa;
+  color: #fff;
+  border-radius: 12px 12px 0 12px;
+  padding: 0.75rem 1rem;
+  max-width: 70%;
+}
+
+.bot-inbox .msg-header {
+  background: #e5e7eb;
+  border-radius: 0 12px 12px 12px;
+  padding: 0.75rem 1rem;
+  max-width: 70%;
+}
+
+.typing-field {
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.input-data {
+  display: flex;
+  align-items: center;
+}
+
+.input-data input[type="text"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input-data button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-data button:hover {
+  background: #1e40af;
+}
+
+/* Loader */
+.loader {
+  display: inline-block;
+}
+
+.loader span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background: #2563eb;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite both;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

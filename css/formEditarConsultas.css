@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #7777e4, #8e7fa7);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+.container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 100px;
+    min-height: 80vh;
+}
+
+
+.mascota {
+    text-align: center;
+    max-width: 280px;
+    position: relative;
+}
+
+.mascota img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mensaje-chatbot {
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 12px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 150px;
+    text-align: center;
+}
+
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    max-width: 500px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.formulario input[type="text"],
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+.submit-btn {
+    background-color: #3e3eec;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #2d2dbb;
+}
+
+
+.error {
+    color: #fff;
+    background: #e74c3c;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.volver-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #3e3eec;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volver-link:hover {
+    background-color: #2d2dbb;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a4c9c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+
+
+footer div{
+    display: block;
+    width: 100%;
+}

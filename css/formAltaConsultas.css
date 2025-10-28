@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #7777e4, #8e7fa7);
+    color: #fff;
+}
+
+.chatbot-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 40px;
+    min-height: 80vh;
+}
+
+.mascota-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.chatbot-img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.chatbot-bubble {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: #e0d9f4;
+    color: #2e2e2e;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #6a3ebc;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #522e97;
+}
+
+.volverdiv {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.volver-link {
+    color: #ffffff;
+    background-color: #3e3eec;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.volver-link:hover {
+    background-color: #2d2dbb;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a4c9c;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+
+
+footer div{
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #7777e4, #8e7fa7);
+    color: #fff;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 80px;
+    min-height: 80vh;
+}
+
+.mascota {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 30px;
+}
+
+.mascota img {
+    width: 100%;
+    height: auto;
+    max-width: 200px !important;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.mensaje-chatbot {
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 12px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 150px;
+    text-align: center;
+}
+
+.contenido {
+    max-width: 700px;
+    width: 100%;
+}
+
+.volver-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #3e3eec;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.volver-link:hover {
+    background-color: #2d2dbb;
+}
+
+
+.consulta {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.consulta p {
+    margin: 10px 0;
+}
+
+
+.acciones {
+    margin-top: 15px;
+}
+
+.editar, .borrar {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.editar {
+    background-color: #3eb489;
+    color: #fff;
+}
+
+.editar:hover {
+    background-color: #2a967f;
+}
+
+.borrar {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.borrar:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a4c9c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+
+
+footer div{
+    display: block;
+    width: 100%;
+}
