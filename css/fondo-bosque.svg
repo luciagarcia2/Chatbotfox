@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Degradado del cielo -->
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#061a33"/>
+      <stop offset="100%" stop-color="#0b3a59"/>
+    </linearGradient>
+    <!-- Degradado de niebla -->
+    <linearGradient id="fog" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="rgba(80,130,180,0.3)"/>
+      <stop offset="100%" stop-color="rgba(15,40,70,0.7)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cielo -->
+  <rect width="1440" height="900" fill="url(#sky)" />
+
+  <!-- Luna -->
+  <circle cx="1200" cy="150" r="60" fill="#f2f8ff" opacity="0.85" />
+  <circle cx="1200" cy="150" r="60" fill="white" opacity="0.08" />
+
+  <!-- Montañas lejanas -->
+  <path d="M0,550 C250,480 500,580 800,500 C1100,430 1300,560 1440,520 L1440,900 L0,900 Z"
+        fill="#09243b" />
+
+  <!-- Colinas medias -->
+  <path d="M0,660 C200,600 500,700 750,640 C1000,580 1200,720 1440,650 L1440,900 L0,900 Z"
+        fill="#0c385a" />
+
+  <!-- Colinas cercanas -->
+  <path d="M0,760 C250,720 600,830 850,760 C1100,690 1440,830 1440,830 L1440,900 L0,900 Z"
+        fill="#0d5274" />
+
+  <!-- Árboles grandes -->
+  <g fill="#07344f">
+    <polygon points="150,780 180,700 210,780"/>
+    <polygon points="280,770 310,680 340,770"/>
+    <polygon points="550,780 580,690 610,780"/>
+    <polygon points="850,770 880,680 910,770"/>
+    <polygon points="1050,780 1080,690 1110,780"/>
+    <polygon points="1250,760 1280,670 1310,760"/>
+  </g>
+
+  <!-- Capa de niebla -->
+  <rect y="720" width="1440" height="200" fill="url(#fog)" opacity="0.8"/>
+</svg>
